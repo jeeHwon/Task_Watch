@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Task_Watch WatchKit Extension
 //
-//  Created by 지승원 on 2022/02/07.
+//  Created by jeeHwon on 2022/02/07.
 //
 
 import SwiftUI

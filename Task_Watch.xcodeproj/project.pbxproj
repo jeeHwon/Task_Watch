@@ -20,6 +20,8 @@
 		E33BBBAD27B15C170028F1E3 /* Task_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBAC27B15C170028F1E3 /* Task_WatchTests.swift */; };
 		E33BBBB727B15C170028F1E3 /* Task_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBB627B15C170028F1E3 /* Task_WatchUITests.swift */; };
 		E33BBBB927B15C170028F1E3 /* Task_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBB827B15C170028F1E3 /* Task_WatchUITestsLaunchTests.swift */; };
+		E33BBBCF27B15FBF0028F1E3 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBCD27B15FBF0028F1E3 /* Task.xcdatamodeld */; };
+		E33BBBD227B160380028F1E3 /* PersistantContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBD127B160380028F1E3 /* PersistantContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		E33BBBB227B15C170028F1E3 /* Task_WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Task_WatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33BBBB627B15C170028F1E3 /* Task_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_WatchUITests.swift; sourceTree = "<group>"; };
 		E33BBBB827B15C170028F1E3 /* Task_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E33BBBCE27B15FBF0028F1E3 /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
+		E33BBBD127B160380028F1E3 /* PersistantContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		E33BBB7827B15C150028F1E3 = {
 			isa = PBXGroup;
 			children = (
+				E33BBBD027B15FEB0028F1E3 /* Shared */,
 				E33BBB8727B15C150028F1E3 /* Task_Watch WatchKit App */,
 				E33BBB9227B15C160028F1E3 /* Task_Watch WatchKit Extension */,
 				E33BBBAB27B15C170028F1E3 /* Task_WatchTests */,
@@ -194,6 +199,15 @@
 				E33BBBB827B15C170028F1E3 /* Task_WatchUITestsLaunchTests.swift */,
 			);
 			path = Task_WatchUITests;
+			sourceTree = "<group>";
+		};
+		E33BBBD027B15FEB0028F1E3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E33BBBCD27B15FBF0028F1E3 /* Task.xcdatamodeld */,
+				E33BBBD127B160380028F1E3 /* PersistantContainer.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,11 +397,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33BBBCF27B15FBF0028F1E3 /* Task.xcdatamodeld in Sources */,
 				E33BBB9827B15C160028F1E3 /* NotificationController.swift in Sources */,
 				E33BBB9627B15C160028F1E3 /* ContentView.swift in Sources */,
 				E33BBB9C27B15C160028F1E3 /* ComplicationController.swift in Sources */,
 				E33BBB9427B15C160028F1E3 /* Task_WatchApp.swift in Sources */,
 				E33BBB9A27B15C160028F1E3 /* NotificationView.swift in Sources */,
+				E33BBBD227B160380028F1E3 /* PersistantContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +832,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E33BBBCD27B15FBF0028F1E3 /* Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E33BBBCE27B15FBF0028F1E3 /* Task.xcdatamodel */,
+			);
+			currentVersion = E33BBBCE27B15FBF0028F1E3 /* Task.xcdatamodel */;
+			path = Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E33BBB7927B15C150028F1E3 /* Project object */;
 }
