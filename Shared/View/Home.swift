@@ -22,7 +22,13 @@ struct Home: View {
                     
                     // Buttons
                     
-                    NavButton(image: "plus", title: "Add", rect: rect, color: Color("pink"))
+                    NavigationLink(
+                        destination: AddItem(),
+                        label: {
+                            
+                            NavButton(image: "plus", title: "Add Cocktail", rect: rect, color: Color("pink"))
+                        })
+                        .buttonStyle(PlainButtonStyle())
                     
                     NavButton(image: "trash", title: "Delete", rect: rect, color: Color("red"))
                 }
@@ -32,7 +38,12 @@ struct Home: View {
                     
                     // Buttons
                     
-                    NavButton(image: "doc.plaintext", title: "View", rect: rect, color: Color("blue"))
+                    NavigationLink(
+                        destination: ViewMemo(),
+                        label: {
+                            NavButton(image: "doc.plaintext", title: "View", rect: rect, color: Color("blue"))
+                        })
+                        .buttonStyle(PlainButtonStyle())
                     
                     NavButton(image: "star", title: "Rating", rect: rect, color: Color("orange"))
                 }
