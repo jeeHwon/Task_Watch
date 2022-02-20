@@ -11,13 +11,22 @@ struct AddItem: View {
     
     @State var memoText = ""
     
+    // getting context from environment
+    @Environment(\.managedObjectContext) var context
+    
+    // Presentation
+    @Environment(\.presentationMode) var presentation
+    
+    // Edit Options
+    var memoItem: Memo?
+    
     var body: some View {
         
         VStack(spacing: 15){
             
             TextField("Recipes...", text: $memoText)
             
-            Button(action: {}, label: {
+            Button(action: addMemo, label: {
                 Text("Save")
                     .padding(.vertical,10)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -29,7 +38,35 @@ struct AddItem: View {
             .buttonStyle(PlainButtonStyle())
             .disabled(memoText == "")
         }
-        .navigationTitle("Add Cocktails")
+        .navigationTitle("\(memoItem == nil ? "Add Cocktails" : "Update")")
+        .onAppear(perform: {
+            
+            // Verifying it memo Item has data
+            if let memo = memoItem{
+                memoText = memo.title ?? ""
+            }
+        })
+    }
+    
+    // Adding Memo
+    
+    func addMemo(){
+        
+        let memo = memoItem == nil ? Memo(context: context) : memoItem!
+        
+        memo.title = memoText
+        memo.dataAdded = Date()
+        
+        // Saving
+        do{
+            try context.save()
+            // if success
+            // closing view
+            presentation.wrappedValue.dismiss()
+        }
+        catch{
+            print(error.localizedDescription)
+        }
     }
 }
 
