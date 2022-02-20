@@ -23,6 +23,7 @@
 		E33BBBCF27B15FBF0028F1E3 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBCD27B15FBF0028F1E3 /* Task.xcdatamodeld */; };
 		E33BBBD227B160380028F1E3 /* PersistantContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBD127B160380028F1E3 /* PersistantContainer.swift */; };
 		E33BBBD727B17A9D0028F1E3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BBBD627B17A9D0028F1E3 /* Home.swift */; };
+		E3429E8C27C2A01B00A753C2 /* DeleteMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3429E8B27C2A01B00A753C2 /* DeleteMemo.swift */; };
 		E3B2B76A27C28B3E00F72563 /* ViewMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B76927C28B3E00F72563 /* ViewMemo.swift */; };
 		E3E7C63627C27EBD00E20E15 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E7C63527C27EBD00E20E15 /* AddItem.swift */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		E33BBBCE27B15FBF0028F1E3 /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
 		E33BBBD127B160380028F1E3 /* PersistantContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantContainer.swift; sourceTree = "<group>"; };
 		E33BBBD627B17A9D0028F1E3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E3429E8B27C2A01B00A753C2 /* DeleteMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMemo.swift; sourceTree = "<group>"; };
 		E3B2B76927C28B3E00F72563 /* ViewMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMemo.swift; sourceTree = "<group>"; };
 		E3E7C63527C27EBD00E20E15 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +227,7 @@
 				E33BBBD627B17A9D0028F1E3 /* Home.swift */,
 				E3E7C63527C27EBD00E20E15 /* AddItem.swift */,
 				E3B2B76927C28B3E00F72563 /* ViewMemo.swift */,
+				E3429E8B27C2A01B00A753C2 /* DeleteMemo.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				E33BBBCF27B15FBF0028F1E3 /* Task.xcdatamodeld in Sources */,
 				E33BBB9827B15C160028F1E3 /* NotificationController.swift in Sources */,
 				E33BBB9627B15C160028F1E3 /* ContentView.swift in Sources */,
+				E3429E8C27C2A01B00A753C2 /* DeleteMemo.swift in Sources */,
 				E33BBB9C27B15C160028F1E3 /* ComplicationController.swift in Sources */,
 				E33BBB9427B15C160028F1E3 /* Task_WatchApp.swift in Sources */,
 				E3E7C63627C27EBD00E20E15 /* AddItem.swift in Sources */,

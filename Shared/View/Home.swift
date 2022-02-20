@@ -30,7 +30,14 @@ struct Home: View {
                         })
                         .buttonStyle(PlainButtonStyle())
                     
-                    NavButton(image: "trash", title: "Delete", rect: rect, color: Color("red"))
+                    NavigationLink(
+                        destination: DeleteMemo(),
+                        label: {
+                            
+                            NavButton(image: "trash", title: "Delete", rect: rect, color: Color("red"))
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                    
                 }
                 .frame(width: rect.width, alignment: .center)
                 

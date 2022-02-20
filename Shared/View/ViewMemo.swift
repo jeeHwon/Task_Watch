@@ -13,6 +13,7 @@ struct ViewMemo: View {
     // Core Data Fetch Request
     
     // Were getting Memos At descending order by using added or modifed date
+    
     @FetchRequest(entity: Memo.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Memo.dataAdded, ascending: false)], animation: .easeIn) var results : FetchedResults<Memo>
     
     var body: some View {
