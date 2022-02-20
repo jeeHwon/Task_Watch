@@ -14,8 +14,9 @@ struct Task_WatchApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
-                    .environment(\.managedObjectContext, container.viewContext)
+                    
             }
+            .environment(\.managedObjectContext, container.viewContext)
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")
